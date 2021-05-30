@@ -385,10 +385,11 @@ a{
 }
 
 .contact-input input,textarea{
-    width: 100%;
+    width: 70%;
     font-size: 2rem;
     padding: 10px;
     margin: 20px 0;
+    margin-left: 60px;
     border: none;
     background-color: rgb(243, 235, 235);
     border-radius: 5px;
@@ -406,6 +407,7 @@ a{
     background-color: crimson;
     border-radius: 5px;
     margin-bottom: 20px;
+    margin-left: 60px;
     box-sizing: border-box;
 
 }
@@ -555,14 +557,17 @@ a{
         font-size: 4rem;
     }
     .contact-input input,textarea{
-        width:100% ;
+        width:120% ;
+        margin-left:-60px ;
     }
     .button{
         width: 50%;
         font-size: 2rem;
+        margin-left: -60px;
     }
     #contact .contact{
         flex-direction: row;
+        margin-left: 70px;
     }
     .contact-subtitle{
         margin-bottom:20px ;
@@ -574,12 +579,14 @@ a{
         padding: 20px;
     }
 
+/*footer section*/
     .brand h1{
         font-size: 3rem;
     }
     #footer p {
         font-size: 1.5rem;
 }
+/*end footer section*/
 
 /*end media quary for tab*/
 
@@ -618,6 +625,9 @@ a{
     .about-img img{
         height: 200px;
         width: 150px;
+    }
+    #contact .contact{
+        margin-left: 80px;
     }
 }
 /*end media quary for desktop*/
