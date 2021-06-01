@@ -336,10 +336,7 @@ a{
     margin-left: 50px;
     
 }
-#skill h1{
-    padding-top: 100px;
-    font-size: 3rem;
-}
+
 #skill .skill p{
     font-size: 16px;
     font-weight: 600;
@@ -351,11 +348,67 @@ a{
     width: 50px;
     margin: 7px 20px;
 }
-#skill span{
-    font-size: 14px;
-    margin: 0 20px;
-}
+
 /* end Skill*/
+
+/* Projects section */
+#projects .projects {
+	flex-direction: column;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 100px 0;
+}
+#projects .projects-header h1 {
+	margin-bottom: 50px;
+}
+#projects .all-projects {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+#projects .project-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 80%;
+	margin: 20px auto;
+	overflow: hidden;
+	border-radius: 10px;
+}
+#projects .project-info {
+	padding: 30px;
+	flex-basis: 50%;
+	height: 100%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	color: white;
+}
+#projects .project-info h1 {
+	font-size: 1.5rem;
+	font-weight: 500;
+}
+#projects .project-info h2 {
+	font-size: 1.3rem;
+	font-weight: 500;
+	margin-top: 10px;
+    margin-bottom: 5px;
+}
+#projects .project-info p {
+	color: white;
+}
+#projects .project-img {
+	flex-basis: 50%;
+	
+	overflow: hidden;
+	position: relative;
+}
+
+/* End Projects section */
 
 /*contact section*/
 #contact .contact{
@@ -549,10 +602,7 @@ a{
     #skill .skill img{
         margin: 10px 25px;
     }
-    #skill h1{
-        font-size: 4rem;
-    }
-
+    
     .contact-title{
         font-size: 4rem;
     }
@@ -578,6 +628,40 @@ a{
         
         padding: 20px;
     }
+
+    /* Project */
+	#projects .project-item {
+		flex-direction: row;
+	}
+	#projects .project-item:nth-child(even) {
+		flex-direction: row-reverse;
+	}
+	#projects .project-item {
+		height: 395px;
+		margin: 0;
+		width: 75%;
+		border-radius: 0;
+	}
+    #projects .project-item .project-info h1{
+        font-size: 4rem;
+
+    }
+    #projects .project-item .project-info h2{
+        font-size: 2.5rem;
+
+    }
+    #projects .project-item .project-info p{
+        font-size: 1.2rem;
+
+    }
+	#projects .all-projects .project-info {
+		height: 100%;
+	}
+	#projects .all-projects .project-img {
+		height: 100%;
+	}
+    
+	/* End Project */
 
 /*footer section*/
     .brand h1{
@@ -607,7 +691,9 @@ a{
 		display: inline-block;
 	}
 	#header .nav-list ul li a {
-		font-size: 1.8rem;
+		font-size: 1.5rem;
+        letter-spacing: 0.1rem;
+        padding: 15px; ;
 	}
 	#header .nav-list ul a:after {
 		display: none;
